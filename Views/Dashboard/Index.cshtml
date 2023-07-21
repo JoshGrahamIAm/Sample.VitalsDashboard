@@ -1,0 +1,34 @@
+﻿@{
+  ViewData["Title"] = "Vitals Dashboard";
+
+}
+
+<div class="container mt-4">
+  <h2 class="mb-4">Real-Time Vitals Dashboard</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <!-- Card 1 -->
+    <div class="col">
+      <div id="heartRateData" class="card">
+        <div class="card-body">
+          <h5 class="card-title">Heart Rate Monitor</h5>
+          <p class="card-text">Real-time heart rate data will be displayed here.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col">
+      <div id="oxygenData" class="card">
+        <div class="card-body">
+          <h5 class="card-title">O2 Sat</h5>
+          <p class="card-text">.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+@section scripts {
+  <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+  <script src="~/js/HeartRate.js"></script>
+}
