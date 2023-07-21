@@ -5,14 +5,14 @@ using System.Linq;
 
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-    {
-    }
+  public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+  {
+  }
 
-    public DbSet<PatientInformation> PatientInformation { get; set; }
+  public DbSet<PatientInformation> PatientInformation { get; set; }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        base.OnModelCreating(modelBuilder);
-    }
+  protected override void OnModelCreating(ModelBuilder modelBuilder)
+  {
+    base.OnModelCreating(modelBuilder);
+  }
 }

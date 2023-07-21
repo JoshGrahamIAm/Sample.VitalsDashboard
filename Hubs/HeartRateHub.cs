@@ -1,6 +1,4 @@
-﻿// HeartRateHub.cs
-using Microsoft.AspNetCore.SignalR;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.SignalR;
 
 public class HeartRateHub : Hub
 {

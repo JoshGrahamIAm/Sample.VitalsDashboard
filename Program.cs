@@ -13,7 +13,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddSignalR();
 
 //add datacontext to ioc
-//would not use this method in live production.  would encrypt 
+//Manage user secrets for connection string.   
 var connectionString = builder.Configuration.GetConnectionString("AppDb");
 builder.Services.AddDbContext<ApplicationDbContext>(x => x.UseSqlServer(connectionString)) ;
 
